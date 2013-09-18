@@ -1,0 +1,1219 @@
+/**
+ * papers.css
+ *
+ * Copyright (c) 2013 Projecte Ictineo
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Papers theme.
+ *
+ * $Id$
+ *
+ * 2013-06-20: Added color effect for #rediCredits.
+ *
+ */
+
+
+/******************************/
+/** Orange:          #E55506 **/
+/** grayBackground:  #F9F9F9 **/
+/** grayBorder:      #E6E6E4 **/
+/** grayText:        #6E6E6E **/
+/******************************/
+
+/******************************/
+/** Body:  fontPapersRegular **/
+/** Title: fontPapersBold    **/
+/** Menu:  fontPapersLight   **/
+/******************************/
+
+/******************/
+/** Font loading **/
+/******************/
+
+
+/*************/
+/** Generic **/
+/*************/
+
+    body {
+        margin: 0;
+    }
+
+    .right {
+        float: right;
+    }
+    
+    .left {
+        float: left;
+    }
+
+    .width {
+        width: 960px;
+        margin: 0 auto;
+    }
+    
+    /** Typos **/
+    body {
+        font-family: fontPapersRegular, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+    }
+    #main,
+    #announcementsHome {
+        font-size: 14px;
+    }
+   
+    /** Links **/ 
+    a {
+        color: #E55506;
+        text-decoration: none;
+        }
+        a:link {
+            color: #E55506;
+        }
+        a:active {
+            color: #E55506;
+        }
+        a:visited {
+            color: #CE4900;
+        }
+        a:hover {
+            color: #6E6E6E;
+            background: none;
+        }
+    /** Lists **/
+    ul {
+        padding-left: 1em;
+        margin-left: 0;
+        }
+        ul li {
+            list-style: none;
+        }
+    /** Denormalize **/
+    .title {
+        color: black;
+    }
+
+    /** Misc: Generic corrections **/
+    .clear {
+      	clear: both;
+    }
+
+    img {
+        vertical-align: baseline;
+    }
+
+    .instruct {
+        font-size: 0.8em;
+      	color: #777;
+    }
+
+/*************************/
+/** Titles & decoration **/
+/*************************/
+
+    #breadcrumb {
+        font-family: fontPapersRegular, Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        padding: 0;
+        border-bottom: 1px solid #CCC;
+        }
+        #breadcrumb a {
+            color: #111;
+            }
+            #breadcrumb a:hover {
+                color: #E55506;
+            }
+            #breadcrumb a:first-child {
+                color: #E55506;
+            }
+
+    #titleWrapper {
+        margin-bottom: 2em;
+        }
+        .wf-loading #titleWrapper h2 {
+          visibility: hidden;
+        }
+        .wf-active #titleWrapper h2 {
+          visibility: visible;
+        }
+        #titleWrapper h2 {
+            font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+            float: left;
+            }
+            .ictHelp a,
+            #titleWrapper h2 .ictHelp a {
+              display: inline-block;
+              width: 1.5em;
+              height: 1.5em;
+              overflow: hidden;
+              text-indent: 9999px;
+              background-position: 0px bottom;
+              background-repeat: no-repeat;
+              background-image: url('img/papersHelp.png');
+              margin: 0px;
+              padding: 0px;
+              margin-left: 0.5em;
+            }
+/*            #titleWrapper h2 #articleTitle .ictHelp a {
+              background-position: 0 top;
+              margin-top: 0.5em;
+            }*/
+        #titleWrapper h3 {
+            text-transform: uppercase;
+            font-size: 1.3em;
+            color: gray;
+        }
+        #titleWrapper .separator {
+            padding-top: 0.4em;
+            border-bottom: 2px solid #CCCCCC;
+        }
+        #titleWrapper #breadcrumb {
+      	    border-bottom: 0;
+            float: right;
+            position:relative;
+            /* bottom:-4px; */
+            padding: 1em 0 0 0;
+        }
+ 
+    #main > h3:first-child {
+        font-size: 1.3em;
+        text-transform: uppercase;
+    }
+
+    #content h3 {
+        border-bottom: 1px solid #CCC;
+        padding: 0.5em 2em 0.3em 0;
+        margin-bottom: 1em;
+        /* MBR fontsize */
+        font-size: 1.4em;
+    }
+
+    #content h4 {
+        margin: 1em 1em 1em 0;
+    }
+
+    #content ul.plain:first-child {
+        background-color: #F9F9F9;
+        border: 1px solid #CCCCCC;
+        display: block;
+        float: right;
+        padding: 1em;
+        margin: 0 0 1em 1em;
+        font-size: 0.9em;
+    }
+
+
+/************/
+/** Layout **/
+/************/
+
+    #main {
+        float: left;
+        width: 698px;
+    }    
+    
+    #rightSidebar {        /* Total widht: 260px */
+        float: right;
+        /*margin: 4.2em 0 2em 20px;*/
+        padding: 0px 20px 20px 20px;
+        width: 200px;
+        /*font-size: 1.1em;*/
+        background-color: #F9F9F9;
+        /** MBR2ICT: el block gris de fons NO ha de tenir la mateixa alçada que el contingut. **/
+    }
+
+    #main, 
+    #rightSidebar {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    #rightSidebar {
+        margin-top: 1.8em;
+    }
+
+
+/*************/
+/** Headers **/        
+/*************/
+
+    #header {
+        background-color: #F9F9F9;
+        border-bottom: 3px solid #E6E6E4;
+        margin:0 auto;
+        }
+        #header h1 {
+            padding: 0;
+        }
+    
+    .header.left {
+        margin: 25px 10px 20px 160px;
+    }
+
+    .header.right {
+        margin: 44px 0px 0px 0px;
+        }    
+        .header.right div {
+            margin-bottom: 1em;
+        }
+    
+    .textLite {
+        font-size: 0.9em;
+        color: #C4C4C4;
+        color: #6E6E6E;
+    }
+
+    .textLite a {
+        color: #6E6E6E;
+    }
+
+    .buttonLite {
+        text-align: center;
+        width: 4em;
+        background-color: #E2E2E2;
+        color: #000;
+      	line-height: 1.6em;
+        padding: 1px 2px;
+        float: right;
+    }
+
+
+/**********/
+/** Menu **/
+/**********/
+    .wf-loading #navbar{
+      visibility: hidden;
+    }
+    .wf-active #navbar {
+      visibility: visible;
+    }
+    #navbar {
+        float: none;
+        clear: both;
+        border-top: 3px solid #000; 
+        font-size: 1.3em;
+        padding: 0;
+        text-align: center;
+        font-family: fontPapersLight, Arial, Helvetica, sans-serif;
+        font-variant: small-caps;
+        text-transform: uppercase;
+        }
+        #navbar ul.menu {
+            list-style-type: none;
+            margin: 6px 8px 4px 0;
+            }    
+            #navbar ul.menu li {
+                display: inline;
+                padding-right: 1.3em;
+                }    
+                #navbar ul.menu li#login,
+                #navbar ul.menu li#register,
+                #navbar ul.menu li#current {
+                    display: none;
+                }
+            #navbar ul.menu a {
+                color: #000;
+                padding: 0 4px 8px 4px;
+                text-decoration:none; 
+            		text-transform: uppercase;
+                }    
+                #navbar ul.menu li.active a, 
+                #navbar ul.menu a:hover {
+                    border-bottom: 3px solid #E55506; 
+                }
+
+
+/**************/
+/** Sidebars **/
+/**************/
+
+    #sidebar {
+        font-size: 1em;
+        } 
+        .wf-loading	#sidebar div.block span.blockTitle {
+          visibility: hidden;
+        }
+        .wf-active #sidebar div.block span.blockTitle {
+          visibility: visible;
+        }
+      	#sidebar div.block span.blockTitle {
+            display: block;
+            font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            border-bottom: 1px solid gray;
+            margin-bottom: 0.5em;
+            padding: 1.5em 0 0.2em 0;
+            line-height: 1em;
+            }
+      	#sidebar input.textField, 
+      	#sidebar select.selectMenu, 
+      	#sidebar input.button {
+/*      #sidebar input, 
+        #sidebar select {*/
+            font-size: 0.9em;
+            padding: 2px;
+            border: 0px;
+            background-color: #E2E2E2;
+            color: #000;
+            }         
+	      #sidebar input.button {
+                padding: 3px 4px;
+            }
+        #sidebar #sidebarNavigation tr,
+        #sidebar #sidebarNavigation td {
+            display: inline;
+            padding: 0;
+            }
+            #sidebar #sidebarNavigation .textField {
+                width: 80px;
+                padding: 3px;
+            }
+            #sidebar #sidebarNavigation .selectMenu {
+                width: 57px;        
+                /* Proposta M+: Aplicar http://bavotasan.com/2011/style-select-box-using-only-css */
+            }
+            #sidebar #sidebarNavigation .blockSubtitle {
+                display: none;
+            }
+            #sidebar #sidebarNavigation ul {
+                margin-top: 0;
+                padding-left: 5px;
+            }
+                #sidebarNavigation li, 
+                #sidebarNavigation br {
+                    display: none;
+            }
+        #sidebar ul {
+            padding-left: 15px;
+            }
+            #sidebar ul li {
+                list-style: square outside none;
+                padding: 0px;
+                line-height: 1.6em;
+                }
+                #sidebar ul.sidebarIndex li {
+                    padding: 0.5em 0 0 0;
+                    margin: 0;
+                    text-align:center;
+                    list-style:none;
+                }
+        #sidebar #rediSuport {
+            padding: 10px 0px 10px 0px;
+        }
+	      #sidebar #sidebarUser table {
+                margin-top: 1em;
+            }
+            #sidebar #sidebarUser table td {
+                line-height: 1em;
+                padding-bottom: 1em;
+            }
+        #sidebar p.read-more a {
+            text-transform: uppercase;  /* CSS1 !! */
+            }
+            #sidebar p.read-more a:hover {
+                color: grey;
+            }
+      	#sidebar #sidebarHelp {
+            }
+      	    .wf-loading #sidebar #sidebarHelp a {
+              visibility: hidden;
+            }
+      	    .wf-active #sidebar #sidebarHelp a {
+              visibility: visible;
+            }
+      	    #sidebar #sidebarHelp a {
+                border-bottom: 1px solid gray;
+                display: block;
+                font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+                font-size: 1.1em;
+                line-height: 1em;
+                margin-bottom: 1.5em;
+                padding-top: 1.5em;
+                padding-bottom: 0.1em;
+                color: black;
+            }
+        #sidebar #rediCredits {
+            text-align: center;
+            padding-top: 10px;
+            padding-right: 10px;
+            }
+            #sidebar #rediCredits .rediCredits {
+                padding-right: 10px
+            }
+        #sidebar ul.sidebarIndex li a img {                                                                                                   
+          vertical-align: text-bottom;
+          padding-bottom: 0.6em;
+      	  width: 120px;
+          opacity : 0.5;
+          filter: alpha(opacity=50); /* msie */
+        }
+            #sidebar ul.sidebarIndex li a img:hover {
+                opacity : 0.8;
+                filter: alpha(opacity=80); /* msie */
+                }
+                #sidebar #rediCredits .rediCredits img, 
+                #sidebar #sidebarRTArticleTools.block .articleToolItem img.articleToolIcon,
+                #sidebar #sidebarRTRelatedItems.block table tbody tr td img.articleToolIcon,
+                #sidebar #sidebarRTRelatedItems.block table tbody tr td #showRelatedItems img {
+                    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+                    filter: gray; /* IE6-9 */
+                    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+                    opacity: 0.8
+                    filter: alpha(opacity=80); /* msie */
+                }
+
+        #sidebar #rediCredits .rediCredits img:hover {
+          filter: none;
+          -webkit-filter: grayscale(0); /* Google Chrome & Safari 6+ */
+          opacity : 0.8;
+          filter: alpha(opacity=80); /* msie */
+        }
+
+
+        /* MBR: Index ids:
+         * #indexScopus
+         * #indexFecyt
+         * #indexIncrecs
+         * #indexResh
+         * #indexCarhus */
+
+        #sidebar ul.sidebarIndex li a#indexResh img {
+            width: 85px;
+        }
+        #sidebar ul.sidebarIndex li a#indexFecyt img {
+            width: 114px;
+        }
+
+/**************/
+/** Home TOC **/
+/**************/
+
+    #TocHeadWrapper {
+        margin: 0px;
+        padding: 0px;
+        }    
+        #TocHeadWrapper>h3 {
+            font-size: 2em;
+            margin: 0;
+            float: left;
+        }
+        #TocHeadWrapper>#breadcrumb {
+            text-align: right;
+            float: right;
+            display: block;
+            /* MBR: Millora sense H3.paddings-top i amb display:inline-block o inline-table vertical-align: bottom? */
+            /* Exemples: http://www.brunildo.org/test/inline-block2.html */
+        }
+    .wf-loading #content {
+      visibility: hidden;
+    }
+    .wf-active #content {
+      visibility: visible;
+    }
+    #content {
+        /* ICT - Typo testing:
+        //font-family: Corbel;
+        //font-family: Trebuchet MS;
+        //font-family: Arial;
+        //font-family: Helvetica;
+        //font-family: Gotham Book;
+        **/
+        font-family: fontPapersRegular, Arial, Helvetica, sans-serif;
+        }
+        .wf-loading #content h4.tocNumber,
+        .wf-loading #content h4.tocSectionTitle {
+          visibility: hidden;
+        }
+        .wf-active #content h4.tocNumber,
+        .wf-active #content h4.tocSectionTitle {
+          visibility: visible;
+        }
+        #content h4.tocNumber,
+        #content h4.tocSectionTitle {
+            font-size: 1.3em;
+            text-transform: uppercase; /* CSS1 !! */
+            margin: 1em 0 0.7em 0;
+            font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        #content h4.tocNumber {
+            font-size: 1.4em;
+            margin: 0em 0 0.8em 0;
+            padding: 0;
+        }
+        #content>table.tocArticle {
+            float: none;
+            clear: both;
+            /*font-size: 1.15em;*/
+            line-height: 1.4em;
+            margin-bottom: 0.7em;
+            color: #6E6E6E;
+            }
+            #content .tocArticle {
+            }
+            /* MBR: efecte "on soc". Si s'aplica, corregir padding */
+            #content .tocArticle :hover {
+                /* background-color: #F9F9F9;
+                   background-color: #FFF4EF;
+                   background-color: #FCFAF4; */
+            }
+            #content .tocArticle .tocTitle {
+                font-style: italic;
+            }
+            #content .tocArticle .tocTitle a {
+                color: #000;
+                font-weight: normal;
+                text-decoration: none;
+                font-style: normal;
+                margin-bottom: 0.3em;
+                display: inline-block;
+                font-size: 1.1em;
+                }
+                #content .tocArticle .tocTitle a:hover {
+                        color: #E55506;
+                        
+                }
+                #content .tocArticle .tocTitle .tocSummaries,
+                #content .tocArticle .tocTitle .tocSummaries a {
+                    color: #E55506;
+                    font-weight: normal;
+                    font-size: 0.92em;
+                    text-decoration: none;
+                    font-style:normal;
+                }
+                #content .tocArticle .tocTitle .tocSummaries a {
+                    margin-top: 0.5em;
+                    display: inline-block;
+                    }
+                    #content .tocArticle .tocTitle .tocSummaries a:hover {
+                        color: #6E6E6E;
+                    }
+            #content .tocArticle .tocGalleys {
+                }
+                #content .tocArticle .tocGalleys .tocPages {
+                    text-align: center;
+                    /*font-size: 0.9em;*/
+                    margin: 1px 0px 8px 0px;
+                }
+                #content .tocArticle .tocGalleys a {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url("img/pdfSprite.jpg") no-repeat bottom;
+                    /*text-indent: -5000px;*/
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    margin: 5px auto 0 auto; 
+                    cursor: pointer;
+                    }
+                    #content .tocArticle .tocGalleys a:hover {
+                        background-position: top;
+                    }
+                #content .tocArticle .tocGalleys a.hidePic {
+                    display: inline;
+                    width: auto;
+                    height: auto;
+                    background: none;
+                    text-indent: 0%;
+                    white-space: nowrap;
+                    margin: auto; 
+                    padding: auto; 
+                    cursor: pointer;
+                    color: #6E6E6E;
+                    }
+                    #content .tocArticle .tocGalleys a.hidePic:hover {
+                        background: none;
+                        color: #E55506
+                    }
+            #content .tocLang {
+                font-size: 0.7em;
+                text-align: center;
+                margin-top: 7px;
+            }
+        #content .tocTitle {
+            width: 90%;
+            padding-right: 50px;
+        }
+        #content .tocGalleys {
+            width: 10%;
+        }
+	#content #displayMembership br {
+	    display:none;
+        }
+
+/***************/
+/** Carrousel **/
+/***************/
+
+    #carrouselWrapper {
+        background-color: #F9F9F9;
+        border-top: 3px solid #E6E6E4;
+        border-bottom: 3px solid #E6E6E4;
+        float: none;
+        clear: both;
+        }
+        #carrouselWrapper .cArrow,
+        #carrouselWrapper .cItem {
+            /*display: inline-block;*/
+	    display: block;
+	    float: left;
+
+            padding: 0 3.8em;
+            margin: 1em auto;
+            height: auto;
+            text-align: center;
+        }
+        #carrouselWrapper .cArrow {
+                height: auto;
+		cursor:pointer;
+		display: block;
+	        position: relative;
+		padding: 0px 0px 0px 0px;
+		margin: -114px 0px 0px 0px;
+            }
+            #carrouselWrapper #cArrowLeft {
+		float: left;
+                padding-left: 0;
+            }
+            #carrouselWrapper #cArrowRight {
+		float: right;
+                padding-right: 0;
+            }
+        #carrouselWrapper div.cItem {
+            vertical-align: middle;
+            height: 186px;
+            width: 126px;
+            }
+            #carrouselWrapper div.cItem div.cNum {
+                font-size: 1.5em;
+                font-family: papersRegualar;
+                margin-bottom: 0.5em;
+		text-align: center;
+            }
+            #carrouselWrapper div.cItem div.cLogo {
+            }
+            #carrouselWrapper div.cItem div.cText {
+                color: #E55506;
+                text-transform: uppercase;  /* CSS1 !! */
+                font-size: 1.1em;
+            		text-align: center;
+            }
+
+            /* MBR: efecte "on soc". Si s'aplica, corregir padding */
+            #carrouselWrapper .cItem:hover {
+                background-color: #E6E6E4;
+            }
+
+
+/**********/
+/** News **/
+/**********/
+
+    table.announcements td.separator {
+        border-top: 1px solid #E6E6E4;
+    }
+    table.announcements td.endseparator {
+        border-top: 2px solid #E6E6E4;
+    }
+
+    #newsWrapper {
+        /*font-size: 14px;*/
+        }
+        .wf-loading #newsWrapper h3 {
+          visibility: hidden;
+        }
+        .wf-active #newsWrapper h3 {
+          visibility: visible;
+        }
+        #newsWrapper h3 {
+            padding: 0.5em 0 0 0;
+            font-size: 1.4em;
+            border-bottom: 1px solid #E6E6E4;
+            text-transform: uppercase;  /* CSS1 !! */
+            font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            margin-bottom: 0.7em;
+        }
+        #newsWrapper table.announcements {
+            width: 960px
+            }
+            /** Separators **/
+            #newsWrapper table.announcements td.headseparator {
+                display: none;
+            }
+            #newsWrapper table.announcements td.separator {
+                /* border-top: 1px solid #E6E6E4; */
+                border-top: none;
+            }
+            #newsWrapper table.announcements td.endseparator {
+                /* border-top: 2px solid #E6E6E4; */
+                border-top: none;
+            }
+            #newsWrapper table.announcements tbody tr.details td.posted {
+                padding-bottom: 1em;
+            }
+
+            #newsWrapper table.announcements tbody * { /** CSS Hack for OJS **/
+                padding: 0;
+                margin: 0;
+            }
+            #newsWrapper table.announcementsMore {
+                text-align: right;
+                font-size: 1.1em;
+                margin-bottom: 1.3em;
+            }
+            .wf-loading #newsWrapper table.announcements h4 {
+              visibility: hidden;
+            }
+            .wf-active #newsWrapper table.announcements h4 {
+              visibility: visible;
+            }
+            #newsWrapper table.announcements h4 {
+                color: #000;
+                font-size: 1.2em;
+                padding-bottom: 0.3em;
+                font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+                font-weight: normal;
+            }
+            #newsWrapper tr.title td.more {
+                display:none;
+            }
+
+    #announcementList {
+	    background-color: #F9F9F9;
+        }
+        #announcementList table.announcements {
+      	    padding: 1em;
+            }
+            #announcementList table.announcements tbody{
+                /*border-top: 3px solid #E6E6E4;
+                border-bottom: 3px solid #E6E6E4;*/
+            }
+            #announcementList table.announcements td.separator {
+            		background-color: white;
+      	        line-height: 1.2em;
+            		font-size: 1em;
+            		padding: 0.5em;
+                /*border-top: 1px solid #E6E6E4;
+                border-bottom: 3px solid #E6E6E4;*/
+            }
+            #announcementList table.announcements td.endseparator {
+            		background-color: white;
+            		font-size: 1em;
+             		line-height: 1em;
+             		padding: 0.5em;
+                /*border-bottom: 2px solid #E6E6E4;*/
+            }
+            #announcementList table.announcements tbody tr td  {
+            		padding-left: 1em;
+            		padding-right: 1em;
+            }
+            #announcementList table.announcements tbody tr.title {
+                    /*border-top: 2px solid #CCC;
+                    width: 100%;*/
+                }
+                #announcementList table.announcements tbody tr.title td.more {
+                    display: none;
+                }
+                #announcementList table.announcements tbody tr.title h4 {
+                    margin: 0 0;
+                    padding-top: 1em;
+                }
+            #announcementList table.announcements tbody tr.details {
+                }
+                #announcementList table.announcements tbody tr.details td.posted {
+                    padding-bottom: 1em;
+                }
+
+    #announcementDescription tr td {
+        background-color: #F9F9F9;
+        padding: 0.5em 1em;
+        }
+
+
+/*****************/
+/** ArticleView **/
+/*****************/
+
+    #topBar {
+        display: none;
+    }
+
+    #authorString {
+        color: #6E6E6E;
+    }
+    #articleTitle .ictHelp a {
+      margin-top: 0.7em;
+      float: right;
+    }
+    #articleSubject,
+    #articleAbstract {
+        }
+        .wf-loading #articleSubject h4,
+        .wf-loading #articleAbstract h4 {
+          visibility: hidden;
+        }
+        .wf-active #articleSubject h4,
+        .wf-active #articleAbstract h4 {
+          visibility: visible;
+        }
+        #articleSubject h4,
+        #articleAbstract h4 {
+            text-transform: uppercase;
+            margin: 0em 0 0.8em 0;
+            font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            }
+            #articleSubject h4 + br,
+            #articleAbstract h4 + br { 	/* ICT: Dealing with OJS */
+                display: none;
+            }
+        #articleSubject h4 {
+            border-bottom: 1px solid #E6E6E4;
+        }
+    #articleAbstract ~ div.ccLicense,
+    #articleSubject ~ div.ccLicense {
+        margin-top: 3em;
+        border-top: 1px solid #E6E6E4;
+        font-size: 0.8em;
+        text-align: left;
+        float: left;
+        width: 100%;
+        }
+        #articleAbstract ~ div.ccLicense *,
+        #articleSubject ~ div.ccLicense * {
+            display: inline;
+        }
+        #articleAbstract ~ div.ccLicense img, 
+        #articleSubject ~ div.ccLicense img {
+            vertical-align: text-bottom;
+            padding-right: 10px;
+            opacity : 0.4;
+            filter: alpha(opacity=40); /* msie */
+        }
+        #articleAbstract ~ div.ccLicense br,
+        #articleSubject ~ div.ccLicense br {
+           display: none;
+        }
+
+
+/************/
+/** Search **/
+/************/
+
+    #advancedSearch {
+        margin-bottom: 2em;
+        margin-left: 1em;
+        }
+        #advancedSearch h4 {
+            margin: 1em 0em 0.8em -1em;
+        }
+        #advancedSearch tbody tr td {
+            }
+            #advancedSearch tbody tr:first-child label {
+                margin-left: -1em;
+                display: block;
+            }
+    #advancedSearch + ul,
+    #results > ul {
+        font-size: 0.8em;
+        margin-left: 2em;
+    }
+    #advancedSearch + ul li,
+    #results > ul li {
+        list-style: square outside none;
+    }
+
+    #results tr td {
+        padding-left: 0 !important;
+        width:30%;
+    }
+    #results .separator {
+        border-top: 1px solid #CCC;
+      	font-size: 1em;
+      	line-height: 1em;
+    }
+    #results .endseparator {
+        padding-top: 2em;
+        font-size: 1em;
+        line-height: 1em;
+        border-bottom: 2px solid #CCC;
+    }
+    #results tbody,
+    #announcementList tbody {
+        border-bottom: 2px solid #CCC;
+    }
+    
+    #results a.file {
+        float:right;
+      	clear:right;
+    }  
+
+/***********/
+/** About **/
+/***********/
+
+    #authorGuidelines ul {
+        padding-left: 4em;
+        font-size: 1em;
+        color: #555;
+        line-height: 1.6em;
+        }
+        #authorGuidelines ul li {
+            list-style: square outside none;
+        }
+
+/************/
+/** Footer **/
+/************/
+
+    .wf-loading #footerWrapper {
+      visibility: hidden;
+    }
+    .wf-active #footerWrapper {
+      visibility: visible;
+    }
+    #footerWrapper {
+        background-color: #F9F9F9;
+        border-top: 3px solid #E6E6E4;
+        border-bottom: 3px solid #E6E6E4;
+        float: none;
+        clear: both;
+        font-family: fontPapersRegular, Arial, Helvetica, sans-serif;
+        color: #6E6E6E;
+        text-align: center;
+        padding: 1em 0 2em 0;
+        }
+        #footerWrapper .separator {
+            float: none;
+            clear: both;
+        }
+        #footerWrapper #footerISSN {
+            font-size: 1em;
+            text-align: left;
+            line-height: 1.8em;
+        }
+        .wf-loading #footerWrapper #footerMenu {
+          visibility: hidden;
+        }
+        .wf-active #footerWrapper #footerMenu {
+          visibility: visible;
+        }
+        #footerWrapper #footerMenu {
+            font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+            border-top: 2px solid #E6E6E4;
+            border-bottom: 2px solid #E6E6E4;
+            height: 30px;
+            margin-bottom: 1em;
+            padding: 2px 0px 2px 20px;
+            }
+            #footerWrapper #footerMenu img {
+                float: left;
+                padding:0px;
+                margin: 0px;
+            }
+            #footerWrapper #footerMenu ul.menu {
+                float: left;
+                list-style-type: none;
+                height: 22px;
+                margin: 4px 0px 0px 10px;
+                padding: 0px 0px 0px 1.3em;
+                border-left: 1px solid gray;
+                }    
+                #footerWrapper #footerMenu ul.menu li {
+                    display: inline;
+                    padding-right: 1.3em;
+                }
+                #footerWrapper #footerMenu ul.menu li a {
+                    color: #6E6E6E;
+                    padding-right: 1em;         /* Mismo valor que #footerWrapper #footerMenu ul.menu li */
+                    border-right: 1px solid gray;
+                    display: inline-block;
+                    height: 22px;               /* Mismo valor que #footerWrapper #footerMenu ul.menu */
+                }
+            #footerWrapper #footerMenu #socialLinks {
+                float: right;
+                padding-top: 2px;
+                }
+                #footerWrapper #footerMenu #socialLinks img {
+                    padding-left: 1em;
+                }
+        #footerWrapper div.ccLicense {
+            text-align: left;
+            float: left;
+	    padding-top: 0.2em;
+            }
+            #footerWrapper div.ccLicense * {
+                display: inline;
+            }
+            #footerWrapper div.ccLicense img {
+                vertical-align: middle;
+                padding-right: 10px;
+                opacity : 0.4;
+                filter: alpha(opacity=40); /* msie */
+            }
+            #footerWrapper div.ccLicense br {
+                display: none;
+            }
+        #footerWrapper #patrocinis {
+            float:right;
+            padding-bottom: 10px;
+        }
+        #footerWrapper #footerCredits {  
+            padding-top: 0.6em;
+            border-top: 2px solid #E6E6E4;
+            color: #6E6E6E;
+            line-height: 1.2em;
+            text-align: left;
+            }
+            #footerWrapper #footerCredits a {
+                color: #6E6E6E;
+                font-family: fontPapersBold, Arial, Helvetica, sans-serif;
+                }
+                #footerWrapper #footerCredits a:hover {
+                    color: #E55506;
+                }
+
+    /* MBR: Inactivo un experimento de footer fijo (con hack para IE6) :-) 
+    #footerWrapper {
+       position:fixed;
+       left:0px;
+       bottom:0px;
+       width:100%;
+    }
+    
+    * html #footerWrapper {
+       position:absolute;
+       top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+    }
+    MBR: End experimento */
+
+
+/****************/
+/** Help pages **/
+/****************/
+
+div.thickSeparator {
+    border-bottom: 2px solid #E6E6E4;
+}
+
+
+/*************/
+/** Archive **/
+/*************/
+
+div#issue {
+    /*clear: none !important;*/
+}
+
+div#issues h3 {
+    border-bottom: 1px solid #CCC;
+    text-align: right;
+}
+
+div#issues div.issueDescription {
+    display: none;
+}
+
+div#issues div.issueCoverImage {
+    display: none;
+}
+
+div#issueCoverImage img {
+    margin: 0 auto;
+}
+
+div#content ul.menu {
+    /* text-align: center; */
+    margin: 2em 0;
+    border-bottom: 1px solid #CCC;
+}
+
+div#content ul.menu li {
+  padding: 0 0 0 1em; 
+}
+
+div#content ul.menu li a {
+    border: 1px solid #CCC;
+    /* background-color: #E2E2E2; */
+    color: black;
+    padding: 0.5em 0.5em 0.35em 0.5em;
+}
+div#content ul.menu li.current a {
+  border-bottom: 1px solid white;
+}
+
+
+/********************/
+/** Editor's forms **/
+/********************/
+
+    /* Highlighting edition's state */
+    /* div#main div#content ul.menu {
+      border-bottom: 2px solid #AAA;
+      font-size: 1.2em;
+    }
+
+    div#main div#content ul.menu li {
+      border: 1px solid #AAA;
+      padding: 2px 10px;
+    }
+
+    div#main div#content ul.menu li.current {
+      background-color: red;
+    }
+
+    div#main div#content ul.menu li.current a {
+      color: white;
+    }
+
+    div#main div#content ul.menu li.current a:hover {
+      background-color: red;
+      color: black;
+    }*/
+
+
+
+/***************/
+/** OJS Hacks **/
+/***************/
+
+    /** A kind of hack due OJS wired HTML structure **/
+    /*table.announcements tbody tr:first-child {
+        display: none;
+    }*/
+
+
+    /* MBR: A temporary dirty fix for Configuration > Step 5.6 (http://papers.uab.cat/manager/setup/5) */
+    div#journalLayout table tbody tr td select.selectMenu {
+      width: auto !important;
+    }
+
+/**************/
+/** /USER    **/
+/*************/
+
+#myJournals table.info td {
+    font-size:0.9em;
+ }
+
+
+p, pre {
+    line-height: 1.5em;
+}
+
+#custom.block.ca_ES .es_ES, #custom.block.ca_ES .en_US {display: none}
+#custom.block.es_ES .ca_ES, #custom.block.es_ES .en_US {display: none}
+#custom.block.en_US .ca_ES, #custom.block.en_US .es_ES {display: none}
+
+/** 
+ * Dirty hack per amagar el block d'usuari quan no s'està loguejat
+ * by quiron
+ * veure canvis a route/to/code/plugins/blocks/user/block.tpl
+ */
+#sidebar #sidebarUser {display: none;}
+#sidebar #sidebarUser.loggedIn {display: inherit;}

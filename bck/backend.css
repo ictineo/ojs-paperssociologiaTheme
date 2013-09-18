@@ -1,0 +1,194 @@
+/*ICT BACKEND PAGES STYLE*/
+
+/**************************
+ *OCULTANDO BLOQUE LATERAL*
+ **************************/
+
+#rightSidebar {
+  display: none;
+  }
+
+#main {
+  width: 1000px;
+}
+
+/*PASTILLAS PRIMER NIVEL MENU*/
+
+/* MBR: Si es modifica en genèric a papers.css, no calen css específics */
+
+/*div#content {
+  }
+  div#content ul.menu {
+    }
+    div#content ul.menu,
+    div#content ul.menu.main {
+      text-align:left;
+      margin-bottom:1em;
+      border-bottom:1px solid #e2e2e2;
+      padding-bottom:0.1em;
+      }
+      div#content ul.menu li,
+      div#content ul.menu.main li {
+        border: 1px solid #e2e2e2;
+        border-bottom: 0px;
+        padding: 0.5em 0.5em 0.4em 0.5em;
+        margin: 0 0.5em 0 1em;
+        background-color: white;
+        }
+        div#content ul.menu li.current, 
+        div#content ul.menu.main li.current {
+          padding-bottom:0.5em;
+          border-bottom:none;
+        }
+
+  div#content ul.issues li {
+    background-color:#e2e2e2;
+    padding-bottom:0.2em;
+    padding-right:0.5em;
+    padding-left:0.5em;
+  }
+
+div#content ul.issues li.current {
+  padding-bottom:0.4em;
+}
+
+div#content ul.issues {
+  border-bottom:1px solid #e2e2e2;
+  padding-bottom:1px;
+  margin-bottom:1em;
+}
+  */
+
+/*SEGUNDO NIVEL DE MENÚ*/
+
+div#content ul.second {
+  float:right;
+  background-color: #F9F9F9;
+  border: 1px solid #CCCCCC;
+  display: block;
+  font-size: 0.9em;
+  margin: 0 0 1em 1em;
+  padding: 1em 2em;
+  }
+  div#content ul.second li {
+    padding: 0;
+    display: block;
+    }
+    div#content ul.second li a {
+      border: 0px;
+      color: #E55506;
+      padding: 0px;
+    }
+
+/*TABLAS DIVERSAS*/
+
+  div#issues {
+    clear:both;
+  }
+  ul.stesplist li {
+    padding-right:1em;
+  }
+
+  table.listing {
+    font-size:0.9em;
+    }
+    table.listing tr.heading td,
+    table.listing td.heading {
+        padding-right:1em;
+        border-bottom:1px solid #cccccc;
+      }
+      table.info td.heading {
+        border-bottom:1px solid #cccccc;
+      }
+    table.listing .level {
+      padding-left:0.7em;
+    }
+    table.listing .ev {
+      text-align:justify;
+    }
+    table.listing .lastH {
+      padding-left:2em;
+    }
+    table.data td.r2,
+    table.data td.r3 {
+      border-bottom:1px solid #cccccc;
+      }
+      table.data tr.reviewer h4 {
+        margin-bottom:0px;
+      }
+  table.info td.heading {                                                                                                                
+    border-bottom:1px solid #cccccc;
+  }
+
+form {
+  font-size:0.9em;
+}
+
+input.textField,
+select.selectMenu,
+textarea.textArea, 
+input.uploadField {
+ padding:1px;
+ }
+input.textField {
+  width:25em;
+}
+
+input, input.button {
+  margin-top:1em;
+}
+
+table.listing tr.highlight {
+  background-color:#e2e2e2;
+}
+
+#reviewersHeader h3,
+#reviewersHeader h4 {
+  border-bottom:0px;
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+#reviewersHeader {
+  border-bottom:1px solid #cccccc;
+}
+table.data td {
+  padding-bottom:0px;
+  padding-top:1em;
+}
+
+#submissions table.listing td.idd,
+#submissions table.listing td.id {
+  /* display:none; */
+}
+
+#submissions table.listing td.ddat {
+ padding-left:0.5em;
+ }
+
+
+#submissions table.listing .treer {
+  border-bottom:0px;
+  padding-right:0px;
+}
+
+#peerReview table.data tr.reviewer h4 {
+  margin-bottom:0px;
+}
+
+#peerReview table.data tr.reviewer .r1 {
+  border-bottom:1px solid #cccccc;
+}
+
+/** Forms **/
+
+/* .selectMenu {
+  margin: 0em 1em;
+}*/
+
+
+/*ICONS*/
+
+a.icon img {
+  opacity:0.5;
+  filter:alpha(opacity=50);
+}

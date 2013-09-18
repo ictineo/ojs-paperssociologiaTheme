@@ -1,0 +1,29 @@
+/**
+ * sidebar.css
+ */
+
+/* Sidebar */
+
+#developedBy {
+	/* Not concerned about */
+}
+
+#sidebar div.block {
+	padding-bottom: 0px;
+}
+
+#sidebar div.block span.blockTitle {
+	display: inline; 
+	font-size: 1.1em;
+	padding: 0 0 0 0;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+#sidebar div.block span.blockSubtitle {
+	display: inline;
+}
+
+#sidebar input.textField, #sidebar select.selectMenu, #sidebar input.button {
+	/* Not concerned about */
+}

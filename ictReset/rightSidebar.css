@@ -1,0 +1,38 @@
+/**
+ * To overwrite OJS "Common HTML elements" to default or Papers values.
+ * To be applied after rightSidebar.css
+ */
+
+
+#headerTitle {
+        text-align: left;
+        width: auto;
+}
+
+#body {
+        /* width: auto; */
+	/* MBR: Value must be forced as far as .width class has lower priority */
+        width: 1024px; 
+}
+
+#rightSidebar {
+        float: none;
+        width: auto;
+        padding: 0;
+        font-size: 1em;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+}
+
+* html #rightSidebar {
+	margin-right: 0; 
+}
+
+#main {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        display: inline;
+        overflow: visible;
+}

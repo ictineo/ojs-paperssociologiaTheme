@@ -1,0 +1,41 @@
+1) Partimos de Vanilla:
+Remplazamos Vanilla por Papers.
+
+2) Añadimos soporte initializr 4.0.1: 
+http://html5boilerplate.com/ 
+Como buena práctica, pero por si es necesario implementar responsive.
+
+3) Cargamos style.css entregado por "el cliente".
+
+4) Revisamos estilos OJS por defecto
+$ mv style style-old
+$ mv lib/pkp/styles/common.css lib/pkp/styles/common.css.old 
+$ mv lib/pkp/styles/content.css lib/pkp/styles/content.css.old 
+$ mv lib/pkp/styles/pkp.css lib/pkp/styles/pkp.css.old 
+
+5) Configuramos la revista:
+--> Mostrar TOC en la home (5.2): http://revistes.uab.cat/mbrpapers/manager/setup/5
+--> Creamos pàgina "Indexada en..."
+--> Bloques laterales (5.6): http://revistes.uab.cat/mbrpapers/manager/setup/5
+--> Número actual: No mostrar imagen antes del TOC: http://revistes.uab.cat/mbrpapers/editor/issueData/55
+
+6) Rompemos los synlinks de plugins y templates los replazamos por su contenido
+$ cd ~/ojs/scripts
+$ ./magazine.sh link2fold papers templates
+$ ./magazine.sh link2fold papers plugins
+
+7) Modificamos templates: Cliente pide que nunca se modifique "core" (/lib/pkp/templates), luego:
+--> templates/common/header.tpl (se anula el código existente y garga header_papers.tpl)
+--> templates/common/header_papers.tpl (réplica de lib/pkp/templates/header.tpl)
+--> templates/common/footer.tpl (se anula el código existente y garga footer_papers.tpl)
+--> templates/common/footer_papers.tpl (réplica de lib/pkp/templates/footer.tpl)
+--> templates/index/journal.tpl
+--> templates/article/header.tpl
+--> templates/issue/view.tpl
+
+8) Creamos symlink del folder cover:
+$ ln -s /home/ojs/webdata/mbrpapers/journals/1/covers ~/ojs/htdocs/ojs-mbrpapers/public/journals/covers
+
+9) Subimos los covers (como Gestor de revista, des del navegador de archivos de OJS)
+
+10) ...

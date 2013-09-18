@@ -1,0 +1,183 @@
+/**
+ * common.css
+ *
+ * Copyright (c) 2013 Marc Bria (Projecte Ictineo)
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Reverse common.css styles (Site-wide shared stylesheet) to default values.
+ *
+ * $Id$
+ */
+
+/* Common HTML elements */
+
+a:link { color: blue; }
+a:active { color: red; }
+a:visited { color: purple; }
+a:hover { color: blue; background: none; }
+
+
+/* Main layout elements */
+
+#header { background-color: white; }
+#footer { background-color: white; }
+#main   { width: auto; margin: 0; }
+
+
+/* Access icons and key */
+
+#accessKey { margin-bottom: 0; }
+
+#accessKey img {
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+
+#content img.accessLogo {
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Navigation bar */
+
+#navbar a {
+	font-size: 1em;
+	letter-spacing: normal;
+}
+
+
+/* Announcements */
+
+#announcementsHome { width: auto; margin: 0; }
+#announcementsHome h3 { text-align: left; }
+#announcements { width: auto; }
+#announcements h3 { text-align: left; }
+
+table.announcements { width: auto; }
+table.announcements td { padding: 0; }
+table.announcements td.nodata { text-align: left; font-style: normal; }
+table.announcements tr.title  { vertical-align: baseline; }
+table.announcements td.title  { width: auto; }
+table.announcements tr.description { vertical-align: baseline; }
+table.announcements td.description { width: auto; }
+table.announcements tr.details { vertical-align: baseline; }
+table.announcements td.posted {
+	padding-top: 0;
+	font-style: normal;
+}
+table.announcements td.more {
+	width: auto;
+	text-align: left;
+}
+
+table.announcementsMore { width: auto; }
+table.announcementsMore td {
+	padding-top: 0;
+	text-align: left;
+}
+
+
+/* Table of contents */
+
+table.tocArticle {
+	/* ICT: This MUST be set to fit your theme */
+	width: 100%;
+}
+
+table.tocArticle td.tocTitle {
+	/* ICT: This MUST be set to fit your theme */
+	width: 90%; 
+}
+
+table.tocArticle td.tocGalleys {
+	/* ICT: This MUST be set to fit your theme */
+	width: 10%;
+	text-align: right;		/* ICT: Normal use */
+}
+
+table.tocArticle td.tocAuthors {
+	padding-left: 0;
+	font-style: normal;
+	vertical-align: baseline;
+}
+
+table.tocArticle td.tocPages {
+	text-align: right;		/* ICT: Normal use */
+	vertical-align: baseline;
+}
+
+.tocArticleCoverImage img {
+	border: 0;
+	float: left;
+	width: 100px;
+	margin: 0 1em 1em 0;
+}
+
+
+/* Homepage image */
+
+#homepageImage img {
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	text-align: center;
+}
+
+.homepageImage img {
+	margin: 0 auto;
+	border: 0;
+	float: left;
+	width: 100px;
+	margin: 1em 1em 1em 0;
+	text-align: center;
+}
+
+/* Issue cover image */
+
+#issueCoverImage img {
+	display: block;
+	border: 0;
+}
+
+.issueCoverImage img {
+	border: 0;
+	float: left;
+	width: 100px;
+	margin: 1em 1em 1em 0;
+}
+
+
+/* Editorial Team Lists */
+
+ol.editorialTeam li { list-style: none; }
+ol.editorialTeam, ol.editorialTeam li {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+/* Additional text styles */
+
+pre {
+	background-color: #F0F0E8;
+	color: #000;
+	font-size: 1.25em;
+}
+
+/* Table styles */
+/* ICT: Ignored */
+
+/* Other organizational elements */
+/* ICT: Ignored */
+
+/* Font Sizer */
+/* ICT: Ignored */
+
+/* @group Tag-it */
+/* ICT: Ignored */
+
+/* @end common.css*/
+

@@ -1,0 +1,44 @@
+
+/************/
+/** Header **/
+/************/
+
+div#top {
+    background: #F9F9F9 url('http://papers.uab.cat/ojs-papers/public/journals/1/pageHeaderTitleImage_es_ES.jpg') no-repeat left top;
+    padding-top: 100px;
+    /* MBR */
+    border-bottom: 1px solid #CCC;
+}
+
+
+html > body #main {
+    width: 75%;
+    font-family: fontPapersRegular;
+}
+
+#main h4,
+#main h2 {
+    text-transform: uppercase;
+    font-family: fontPapersBold;
+}
+
+/*************/
+/** Sidebar **/
+/*************/
+
+    #sidebar {
+        background-color: #F9F9F9;
+        border: 1px solid #CCC;
+        /* MBR */
+        padding: 1em 0em 1em 1em;
+        margin-top: 4.3em;
+        margin-right: 0;
+        }
+        #sidebar > br {
+            display: none;
+        }
+        #sidebar input.textField, 
+        #sidebar select.selectMenu, 
+        #sidebar input.button {
+            padding: 3px;
+        }
